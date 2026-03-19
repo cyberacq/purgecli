@@ -1,0 +1,42 @@
+# PurgeCLI — .gitignore
+
+# ─── OS & Editor Artifacts ────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── PurgeCLI Runtime Files ───────────────────────────────────────────────────
+# User config and logs generated at runtime — not tracked in the repo
+*.log
+purgecli.log
+
+# ─── Build / Release Artifacts ────────────────────────────────────────────────
+# Compiled or packaged release files (managed via GitHub Releases)
+*.gz
+*.tar.gz
+*.zip
+dist/
+release/
+build/
+
+# ─── Test Scratch Directories ─────────────────────────────────────────────────
+test/trash/
+test/rescue/
+sandbox/
+
+# ─── Secrets & Environment ────────────────────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
